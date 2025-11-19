@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学年レク</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const ua = navigator.userAgent || "";
+
+      if (ua.includes("LoiLoNote")) {
+        // LoiLoNote
+        document.getElementById("message").style.display = "block";
+      } else {
+        // ok
+        window.location.href = "https://32recpage.vercel.app/";
+      }
+    });
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div id="message" style="display:none;">
+    <p>① 右上の共有ボタンを押す<br>②「safariで開く」を押す。</p>
+  </div>
+</body>
+</html>
