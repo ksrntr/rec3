@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirect</title>
   <script>
-    window.location.href = "https://32recpage.vercel.app/?a=a";
+    // 1000〜9999 のランダムな4桁整数を生成
+    const random4 = Math.floor(Math.random() * 9000) + 1000;
+    // リダイレクト
+    window.location.href = "https://32recpage.vercel.app/?refresh=" + random4;
   </script>
 </head>
 <body>
